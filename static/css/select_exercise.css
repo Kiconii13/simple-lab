@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #220064;
+    --secondary-color: lightgray;
+    --accent: #8c52ff;
+    --button-color: #906bdb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    width: 9rem;
+    height: 4rem;
+    border: solid 6px var(--primary-color);
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--button-color);
+    content: "";
+    font: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    outline: none;
+    padding: 3px 5px;
+}
+select:focus{
+    background-color: var(--accent);
+}
+input[type=submit]{
+    background-color: var(--button-color);
+}
+input[type=submit]:hover{
+    background-color: var(--accent);
+}
+
