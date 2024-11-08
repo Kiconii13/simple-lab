@@ -78,3 +78,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+main::-webkit-scrollbar {
+    display: none;
+}
+  
+main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
