@@ -8,11 +8,12 @@
     --primary-color: #220064;
     --secondary-color: lightgray;
     --accent: #8c52ff;
+    font-size: 10px;
 }
 
 body {
     font-family: 'Bukhari Script', sans-serif;
-    font-size: 16px;
+    font-size: 2rem;
     background-image: url("../images/background.png");
     background-position: center;
     background-size: cover;
