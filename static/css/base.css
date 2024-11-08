@@ -32,6 +32,9 @@ main {
     background-color: lightgray;
     margin: 15vw;
     width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,17 +46,34 @@ input[type="submit"] {
     font: inherit;
     cursor: pointer;
     background: none;
-    border: 5px solid var(--primary-color);
+    border: 6px solid var(--primary-color);
     padding: 12px;
-    border-radius: 15px;
+    border-radius: 45px;
     margin: 10px;
+    transition: 300ms ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 200ms ease;
 }
 
 input[type="text"], input[type="number"] {
-    padding: 6px;
+    padding: 10px;
     background: white;
-    border: 5px solid var(--primary-color);
-    border-radius: 20px;
+    border: 6px solid var(--primary-color);
+    border-radius: 30px;
     font: inherit;
     margin: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
