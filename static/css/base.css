@@ -215,6 +215,7 @@ body {
     animation: float 5s ease-in-out infinite;
 }
 
-p{
-    font-family: "OneLittleFont";
+p, li{
+    font-family: "OneLittleFont", sans-serif;
+    list-style-type: upper-alpha;
 }

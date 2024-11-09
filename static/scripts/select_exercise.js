@@ -31,7 +31,7 @@ const select = document.getElementById("year");
             btn.classList.add("exercise_button");
             btn.value = "Proving Newton's Second Law with Atmund's machine";
             btn.addEventListener("click", () => {
-              alert(1);
+              window.location.replace("/templates/e_0701/e_0701.html");
             });
 
             buttons.appendChild(btn);
