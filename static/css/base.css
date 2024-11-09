@@ -15,7 +15,6 @@
 body {
     font-family: 'Bukhari Script', sans-serif;
     font-size: 2rem;
-    background-image: url("../images/background.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,4 +129,63 @@ body{
     top: 10px;
     right: 10px;
     padding-top: 5px;
+}
+
+/*  Background  */
+
+body {
+    background-color: #8c52ff;
+    overflow: hidden;
+    margin: 0;
+}
+
+.circle {
+    position: absolute;
+    background-color: #cb87be;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.circle1 {
+    width: 350px;
+    height: 350px;
+    top: 5%;
+    left: 5%;
+}
+
+.circle2 {
+    width: 300px;
+    height: 300px;
+    top: 1%;
+    left: 60%;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    top: 70%;
+    left: 20%;
+}
+
+.circle4 {
+    width: 350px;
+    height: 350px;
+    top: 45%;
+    left: 70%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.circle {
+    animation: float 5s ease-in-out infinite;
 }
