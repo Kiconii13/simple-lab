@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #220064;
+    --secondary-color: lightgray;
+    --accent: #8c52ff;
+    --tertiary-color: #906bdb;
+    font-size: 10px;
+}
+
+p {
+    border: 6px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 30px;
+    max-height: 200px;
+    background: rgba(255,255,255,1);
+    overflow-y: scroll;
+}
+
+.row {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 50%;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.col img {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+#back img{
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: 'OneLittleFont';
+    src: url('/static/fonts/OneLittleFont.otf');
+}
+
+ul{
+    font-family: "One Little Font";
+    margin-top: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 70%;
+    color: #220064;
+    font-family: "OneLittleFont";
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #220064;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: #ece1f9;
+}
+
+.table-header {
+    font-style: italic;
+    text-align: left;
+    padding-left: 15px;
+}
+td input{
+    max-width: 10rem;
+}

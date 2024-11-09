@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Select exercise</title>
     <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/base.css">
-    <link rel="stylesheet" href="../static/css/select_exercise.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/select_exercise.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
 
 </head>
 <body>
@@ -17,10 +18,13 @@
 
 
     <main>
+        <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
+            <img src="/static/images/home-agreement.png" alt="Home">
+          </button>
         <h1>Determination of liquid density using Archimedes' law</h1>
         
         <input type="submit" style="width: 100%;" value="Theoretical base" onclick="window.location.replace('theoretical.html')">
-        <input type="submit" style="width: 100%;" value="Exercise" onclick="window.location.replace('exercise.html')">
+        <input type="submit" style="width: 100%;" value="Exercise" onclick="window.location.replace('practical.html')">
         <input type="submit" style="width: 100%;" value="Quiz" onclick="window.location.replace('quiz.html')">
     </main>
 </body>

@@ -9,9 +9,14 @@
     --secondary-color: lightgray;
     --accent: #8c52ff;
     --tertiary-color: #906bdb;
+    --button-color: #906bdb;
     font-size: 10px;
 }
 
+@font-face {
+    font-family: 'OneLittleFont';
+    src: url('/static/fonts/OneLittleFont.otf');
+}
 body {
     font-family: 'Bukhari Script', sans-serif;
     font-size: 2rem;
@@ -36,7 +41,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow: scroll;
     position: relative;
 }
@@ -46,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px;
 }
 
-input[type="submit"] {
+input[type="submit"], button {
     font: inherit;
     cursor: pointer;
     background: none;
@@ -57,7 +61,7 @@ input[type="submit"] {
     transition: 300ms ease;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, button{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transition: 200ms ease;
@@ -65,6 +69,11 @@ input[type="submit"]:hover {
 
 .btn-secondary {
     background-color: var(--tertiary-color) !important;
+}
+
+button img{
+    width: 2rem;
+    height: 2rem;
 }
 
 input[type="text"], input[type="number"] {
@@ -100,6 +109,23 @@ main {
     overflow: hidden;
 }
 
+select{
+    width: 9rem;
+    height: 4rem;
+    border: solid 6px var(--primary-color);
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--button-color);
+    content: "";
+    font: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    outline: none;
+    padding: 3px 5px;
+}
+
 ::-webkit-scrollbar{
     width: 6px;
 }
@@ -128,7 +154,6 @@ body{
     position: absolute;
     top: 5%;
     right: 5%;
-    padding-top: 5px;
 }
 
 /*  Background  */
@@ -188,4 +213,8 @@ body {
 
 .circle {
     animation: float 5s ease-in-out infinite;
+}
+
+p{
+    font-family: "OneLittleFont";
 }

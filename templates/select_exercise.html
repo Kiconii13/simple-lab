@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select exercise</title>
+    <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/select_exercise.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
+</head>
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+
+
+    <main>
+        <h1>Select exercise</h1>
+        <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
+          <img src="/static/images/home-agreement.png" alt="Home">
+        </button>
+        <div class="main-container">
+            <form id="f1">
+              <label for="year">Year
+                <select name="year" id="year" onchange="updateOptions()">
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+              </label>
+
+            <!-- Button template-->
+             <div id="buttons">
+               <input type="submit" class="exercise_button" value="Determination of liquid density using Archimedes' law">
+               <input type="submit" class="exercise_button" value="Determination of liquid density using Archimedes' law">
+               <input type="submit" class="exercise_button" value="Determination of liquid density using Archimedes' law">
+             </div>
+            </form>
+        </div>
+    </main>
+    <script src="/static/scripts/base.js"></script>
+    <script src="/static/scripts/select_exercise.js"></script>
+</body>
+</html>

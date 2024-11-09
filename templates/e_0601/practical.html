@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleLab | Exercize</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/exercise.css">
+    <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
+</head>
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+
+    <main>
+        <div class="rows-container">
+            <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
+                <img src="/static/images/home-agreement.png" alt="Home">
+              </button>
+            <h1>Determination of liquid density using Archimedes' law</h1>
+            <div class="row">
+                <p><b>Objective of the exercise:</b> Determining the density of an unknown liquid based on the motion of a free-falling body through that medium. <br>
+                <b>Description of the exercise:</b> <br>
+                By pressing the red button, the measurement system resets. Rotate the bottle by 180 degrees. After that, return the bottle to the starting position and rest it on the surface. Read the fall time of the ball from the measurement tool display and fill the values in the data table. The measuring process should be repeated 3 times.
+            </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-header">Fluid density</th>
+                                <th>t</th>
+                                <th>t<sub>md</sub></th>
+                                <th>&Delta;t</th>
+                                <th>a<sub>1</sub></th>
+                                <th style="border-top: 0; border-right: 0; background-color: transparent;"></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td rowspan="3">ρ<sub>0</sub></td>
+                            <td><input type="text" name="d_11" id="d_11"></td>
+                            <td><input type="text" name="d_12" id="d_12"></td>
+                            <td><input type="text" name="d_13" id="d_13"></td>
+                            <td><input type="text" name="d_14" id="d_14"></td>
+                            <td rowspan="3" style="text-align: left; padding-left: 15px;">V = <input type="text" name="v" id="v"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_21" id="d_21"></td>
+                            <td><input type="text" name="d_22" id="d_22"></td>
+                            <td><input type="text" name="d_23" id="d_23"></td>
+                            <td><input type="text" name="d_24" id="d_24"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_31" id="d_31"></td>
+                            <td><input type="text" name="d_32" id="d_32"></td>
+                            <td><input type="text" name="d_33" id="d_33"></td>
+                            <td><input type="text" name="d_34" id="d_34"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">ρ<sub>t</sub></td>
+                            <td><input type="text" name="d_41" id="d_41"></td>
+                            <td><input type="text" name="d_42" id="d_42"></td>
+                            <td><input type="text" name="d_43" id="d_43"></td>
+                            <td><input type="text" name="d_44" id="d_44"></td>
+                            <td rowspan="3" style="text-align: left; padding-left: 15px;">ρ<sub>t</sub> = <input type="text" name="t" id="t"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_51" id="d_51"></td>
+                            <td><input type="text" name="d_52" id="d_52"></td>
+                            <td><input type="text" name="d_53" id="d_53"></td>
+                            <td><input type="text" name="d_54" id="d_54"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_61" id="d_61"></td>
+                            <td><input type="text" name="d_62" id="d_62"></td>
+                            <td><input type="text" name="d_63" id="d_63"></td>
+                            <td><input type="text" name="d_64" id="d_64"></td>
+                        </tr>
+                    </table>
+                    <div class="answer">
+                        <p>
+                            
+                        </p>
+                    </div>                   
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="/static/scripts/exercise.js"></script>
+</body>
+</html>

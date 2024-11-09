@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleLab | Index</title>
-    <link rel="stylesheet" href="static/css/base.css">
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
     <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +19,7 @@
         <h1>Simple Lab</h1>
         <div class="main-container">
             <div class="col">
-                <img src="static/images/avatar.png" alt="">
+                <img src="/static/images/avatar.png" alt="">
             </div>
             <div class="col">
                 <label>
@@ -33,17 +34,6 @@
         </div>
         <input type="submit" value="Join room" onclick="next()">
     </main>
-    <script>
-        const fields = document.querySelectorAll("input");
-
-        function next() {
-            const name = fields[0].value;
-            const code = fields[1].value;
-
-            // send this data to backend...
-            
-            window.location.replace("/select_exercise.html");
-        }
-    </script>
+    <script src="/static/scripts/index.js"></script>
 </body>
 </html>
