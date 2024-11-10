@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleLab | Exercize</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/exercise.css">
+    <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
+</head>
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+
+    <main>
+        <div class="rows-container">
+            <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
+                <img src="/static/images/home-agreement.png" alt="Home">
+              </button>
+            <h1>Determination of liquid density using Archimedes' law</h1>
+            <div class="row">
+                <p>
+                    <b>Description of the exercise:</b> <br>
+                    By pressing the red button, the measuring system is reset. Place the bodies in the starting position, let the system move freely. Read the value of the elapsed time from the initial moment to the impact of the balls on the surface from the display. Perform the measurements 3 times. Determine the mean time value, as well as the absolute value of the time measurement error. Determine the value of the acceleration a_1 and determine the relative error of the experiment.
+                    <br> <br>
+                    <b>Given values:</b> <br>
+                    h - distance covered by the ball h=10cm
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>t</th>
+                                <th>t<sub>md</sub></th>
+                                <th>&Delta;t</th>
+                                <th>a<sub>1</sub></th>
+                                <th style="border-top: 0; border-right: 0; background-color: transparent;"></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><input type="text" name="d_11" id="d_11"></td>
+                            <td><input type="text" name="d_12" id="d_12"></td>
+                            <td><input type="text" name="d_13" id="d_13"></td>
+                            <td><input type="text" name="d_14" id="d_14"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_21" id="d_21"></td>
+                            <td><input type="text" name="d_22" id="d_22"></td>
+                            <td><input type="text" name="d_23" id="d_23"></td>
+                            <td><input type="text" name="d_24" id="d_24"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_31" id="d_31"></td>
+                            <td><input type="text" name="d_32" id="d_32"></td>
+                            <td><input type="text" name="d_33" id="d_33"></td>
+                            <td><input type="text" name="d_34" id="d_34"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_41" id="d_41"></td>
+                            <td><input type="text" name="d_42" id="d_42"></td>
+                            <td><input type="text" name="d_43" id="d_43"></td>
+                            <td><input type="text" name="d_44" id="d_44"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_51" id="d_51"></td>
+                            <td><input type="text" name="d_52" id="d_52"></td>
+                            <td><input type="text" name="d_53" id="d_53"></td>
+                            <td><input type="text" name="d_54" id="d_54"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="d_61" id="d_61"></td>
+                            <td><input type="text" name="d_62" id="d_62"></td>
+                            <td><input type="text" name="d_63" id="d_63"></td>
+                            <td><input type="text" name="d_64" id="d_64"></td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Relativna vrednost greške je δ = (a<sub>1</sub>-g/4)/(g/4) = <input type="text" name="calc" id="">
+            </p>
+        </div>
+    </div>
+    </main>
+    <script src="/static/scripts/exercise.js"></script>
+</body>
+</html>

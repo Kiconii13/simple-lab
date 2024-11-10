@@ -41,7 +41,7 @@ const select = document.getElementById("year");
             btn.classList.add("exercise_button");
             btn.value = "Determining the constant tension \n when the ball moves down the groove";
             btn.addEventListener("click", () => {
-              alert(1);
+              window.location.replace("/templates/e_0702/e_0702.html");
             });
 
             buttons.appendChild(btn);
