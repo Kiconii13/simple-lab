@@ -26,11 +26,13 @@
                 <p>
                     <b>Objective of the exercise:</b> We will observe the rolling of a ball from rest down the Galilean groove, this motion is a uniformly accelerated rectilinear motion, so the dependence of the ball's distance on time is given by the equation <code>s=0.5*at<sup>2</sup></code>.  <br>
                     We will determine the acceleration of the ball a by measuring the distance s traveled and the time t for the ball to travel that distance from the equation <code>a=2s/t<sup>2</sup></code>.
-            </p>
+                    <br> <br>
+                    <b>Description of the exercise:</b> We will measure on a steep plane with an inclination angle of 45 degrees and a steep plane with an inclination angle of 30 degrees.
+                </p>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="/static/images/e_0701_1.png" alt="Slika vezbe">
+                    <img src="/static/images/e_0702_1.png" alt="Slika vezbe">
                     
                 </div>
                 <div class="col">
@@ -38,7 +40,6 @@
                     <div>
                         a<sub>1</sub> = <input type="text" name="calc" id="calc1"> <br>
                         a<sub>2</sub> = <input type="text" name="calc" id="calc2"> <br>
-                        a<sub>3</sub> = <input type="text" name="calc" id="calc3"> <br>
                     </div>
                     <input type="submit" value="Check" class="btn-secondary">
                 </div>
@@ -46,74 +47,45 @@
             <div class="row">
                 <div class="explanation_text_container">
                     <ul id="Explaination_text" hidden="true">
-                        <li>Gravitational force acts on every body of mass m.</li>
-                        <li>As the thread is thin and inextensible, the resulting force on every small part of that thread is.</li>
-                        <img src="/static/images/exp_0701.png" alt="">
+                        <li>The corresponding drawn angles in the figure are equal to angles with normal legs and are 45 degrees.</li>
+                        <center>
+                            <img src="/static/images/exp_0702_3.png" alt=""> <br>
+                            <img src="/static/images/exp_0702_4.png" alt="">
+                        </center>
+                        <li>We know that it is valid for an isosceles right triangle.</li>
+                        <center>
+                            <img src="/static/images/exp_0702_1.png" alt="">
+                        </center>
                         <br>
-                        <img src="/static/images/e_0701_2.png" alt="">
+                        <li>From there we conclude that <code>Fgp=0.5*mg*sqrt(2)</code> </li>
+                        <li>We write Newton's second law for the ball:</li>
+                        <center>
+                            <br>
+                            <code>Fgp=0.5*mg*sqrt(2)=ma</code>
+                            <br> <br>
+                        </center>
+                        <li>We can conclude <code>a=0.5*g*sqrt(2)</code></li>
+                        <li>The corresponding drawn angles in the picture are equal to the angles with normal sides and are 45 degrees</li>
+                        <li>We know that for a right triangle with angles of 60 and 30 degrees:</li>
+                        <center>
+                            <img src="/static/images/exp_0702_2.png" alt="">
+                        </center>
+                        <li>From there we conclude that <code>Fgp=0.5*mg</code></li>
+                        <li>We write Newton's second law for the ball:</li>
+                        <center>
+                            <br>
+                            <code>Fgp=0.5*mg*=ma</code>
+                            <br> <br>
+                        </center>
+                        <li>We conclude: <code>a=g*0.5</code></li>
                         <li>
-                            We assume the directions of movement (acceleration) of bodies 1, 2 and 3
-                        </li>
-                        <br>
-                        <li>We write Newton's Second Laws for each of these bodies
+                            From there we conclude that the calculations are for: <br>
                             <center>
-                                <ol>
-                                    <li>
-                                        <code>ma<sub>1</sub>=mg-T</code>
-                                    </li>
-                                    <li>
-                                        <code>ma<sub>2</sub>=2T-mg</code>
-                                    </li>
-                                    <li>
-                                        <code>ma<sub>3</sub>=mg-T</code>
-                                    </li>
-                                </ol>
-                            </center>
-                        </li> <br>
-                        <li>
-                            The variables are a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, T
-                        </li>
-                        <li>
-                            We have 4 unknowns => we must have 4 non-equivalent singularities
-                        </li>
-                        <li>
-                            Based on Equations 1 and 3, we can conclude that a<sub>1</sub>=a<sub>3</sub>
-                        </li>
-                        <li>
-                            If body 1 moves by s<sub>1</sub> for a time period t, body 2 moves by s<sub>2</sub> = 2s<sub>1</sub>
-                        </li>
-                        <li>
-                            As the movement of the body is uniformly accelerated, we know that s<sub>1</sub>=0.5*a<sub>1</sub>t<sup>2</sup> and that s<sub>2</sub>=0.5*a<sub>2</sub>t<sup>2</sup>
-                        </li>
-                        <li>
-                            From there we have that s<sub>1</sub>/s<sub>2</sub> = a<sub>1</sub>/a<sub>2</sub> => s<sub>1</sub>/2*s<sub>2</sub> = a<sub>1</sub>/a<sub>2</sub> => 2*a<sub>1</sub> = a<sub>2</sub>
-                        </li>
-                        <li>
-                            Now we have 4 equations and 4 unknowns and we can solve the system
-                        </li>
-                        <li>
-                            From equation 1 we have <code>T=mg-ma</code>
-                        </li>
-                        <li>
-                            Substituting into the 2nd equation, we get that <code>2ma=2mg-2ma-mg => 4ma=mg => a=g/4</code>
-                        </li> <br>  
-                        <li>
-                            From there we conclude that the calculations are for: <br> <br>
-                            <center>
-                                <ol>
-                                    <li>
-                                        a<sub>1</sub> = g / 4
-                                    </li>
-                                    <li>
-                                        a<sub>2</sub> = g / 2
-                                    </li>
-                                    <li>
-                                        a<sub>3</sub> = g / 4
-                                    </li>
-                                </ol>
+                                <code>a<sub>1</sub>=0.5*g*sqrt(2)</code> <br>
+                                <code>a<sub>2</sub>=0.5*g</code>
                             </center>
                         </li>
-                    </ul>                        
+                    </ul>
                 <input type="submit" value="Explaination" id="Explaination" class="btn-secondary">
                 </div>
             </div>
