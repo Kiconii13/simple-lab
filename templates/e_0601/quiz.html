@@ -5,6 +5,7 @@
     <title>Select exercise</title>
     <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/select_exercise.css">
     <link rel="stylesheet" href="/static/css/quiz.css">
     <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
 
@@ -22,20 +23,20 @@
             <img src="/static/images/home-agreement.png" alt="Home">
         </button>
         <h1>Quiz</h1>
-        <p>If we mark with A the speed at the bottom of the angle of the steep plane of inclination angle 45 degrees from the previous experiment, and with B we mark the speed at the bottom of the corner of the steep plane of inclination angle of 30 degrees. Then the following applies:</p>
+        <p>How does the value of acceleration a<sub>1</sub> change if we replace the weight of mass m with the weight of mass 2m?</p>
+        <img src="" alt="">
         <ol class="quiz">
             <li onclick="handleChoice(1)">
-                A > B
+                <input type="submit" style="width: 100%;" value="It stays the same">
             </li>
             <li onclick="handleChoice(2)">
-                A = B
+                <input type="submit" style="width: 100%;" value="It doubles">
             </li>
             <li onclick="handleChoice(3)">
-                A < B
+                <input type="submit" style="width: 100%;" value="The system is in balance">
             </li>
         </ol>
-        <p id="explaination" hidden>
-            The potential energy of the system E1 > E2 and since the total energy of the system is constant, the kinetic energy is greater in case 1, so answer A is correct.
+        <p id="explaination" hidden>The potential energy of the system E1 > E2 and since the total energy of the system is constant, the kinetic energy is greater in case 1, so answer A is correct.
         </p>
     </main>
     <script>

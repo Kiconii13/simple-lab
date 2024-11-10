@@ -21,14 +21,10 @@
             <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
                 <img src="/static/images/home-agreement.png" alt="Home">
               </button>
-            <h1>Determination of liquid density using Archimedes' law</h1>
+            <h1>Determining the constant tension when the ball moves down the groove</h1>
             <div class="row">
                 <p>
-                    <b>Description of the exercise:</b> <br>
-                    By pressing the red button, the measuring system is reset. Place the bodies in the starting position, let the system move freely. Read the value of the elapsed time from the initial moment to the impact of the balls on the surface from the display. Perform the measurements 3 times. Determine the mean time value, as well as the absolute value of the time measurement error. Determine the value of the acceleration a_1 and determine the relative error of the experiment.
-                    <br> <br>
-                    <b>Given values:</b> <br>
-                    h - distance covered by the ball h=10cm
+                    By pressing the red button, the measurement system is reset. First, place the ball at the top of an inclined plane with a slope angle of 30&deg;. Allow it to move freely under the force of gravity. Record the elapsed time from the initial moment to when the ball leaves the inclined plane. Perform the measurements three times. Determine the average time value as well as the absolute error in time measurement. Calculate the acceleration value a<sub>1</sub> and determine the relative error of the experiment. Repeat the procedure for an inclined plane with a slope angle of 45&deg;.
                 </p>
             </div>
             <div class="row">
@@ -36,14 +32,15 @@
                     <table>
                         <thead>
                             <tr>
+                                <th>&Alpha;</th>
                                 <th>t</th>
                                 <th>t<sub>md</sub></th>
                                 <th>&Delta;t</th>
                                 <th>a<sub>1</sub></th>
-                                <th style="border-top: 0; border-right: 0; background-color: transparent;"></th>
                             </tr>
                         </thead>
                         <tr>
+                            <td rowspan="3">30&deg;</td>
                             <td><input type="text" name="d_11" id="d_11"></td>
                             <td><input type="text" name="d_12" id="d_12"></td>
                             <td><input type="text" name="d_13" id="d_13"></td>
@@ -62,6 +59,7 @@
                             <td><input type="text" name="d_34" id="d_34"></td>
                         </tr>
                         <tr>
+                            <td rowspan="3">45&deg;</td>
                             <td><input type="text" name="d_41" id="d_41"></td>
                             <td><input type="text" name="d_42" id="d_42"></td>
                             <td><input type="text" name="d_43" id="d_43"></td>
@@ -83,9 +81,14 @@
             </div>
         </div>
         <div class="row">
-            <p>
-                Relativna vrednost greške je δ = (a<sub>1</sub>-g/4)/(g/4) = <input type="text" name="calc" id="">
-            </p>
+            <p style="width: 100%; overflow-x: auto;">
+                Relative measurement error δ<sub>1</sub> = <sup>(a<sub>1</sub> - <sup>g</sup>&frasl;<sub>&Sqrt;2</sub>)</sup>&frasl;<sub>(<sup>g</sup>&frasl;<sub>&Sqrt;2</sub>)</sub> = <input type="text" name="calc" id="sigma_1">
+            </p>            
+        </div>
+        <div class="row">
+            <p style="width: 100%; overflow-x: auto;">
+                Relative measurement error δ<sub>2</sub> = <sup>(a<sub>1</sub> - <sup>g</sup>&frasl;<sub>2</sub>)</sup>&frasl;<sub>(<sup>g</sup>&frasl;<sub>2</sub>)</sub> = <input type="text" name="calc" id="sigma_1">
+            </p>            
         </div>
     </div>
     </main>
