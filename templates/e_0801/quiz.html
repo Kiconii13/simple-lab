@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select exercise</title>
+    <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/select_exercise.css">
+    <link rel="stylesheet" href="/static/css/quiz.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
+
+</head>
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+
+
+    <main>
+        <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
+            <img src="/static/images/home-agreement.png" alt="Home">
+        </button>
+        <h1>Quiz</h1>
+        <p>
+            Equivalent resistance of the system from the picture, if R1=100 Ohm, R2=200 Ohm, R3=300 Ohm <br>
+            <center>
+                <img src="/static/images/e_0801_1.png" alt="">
+            </center>
+        </p>
+        <ol class="quiz">
+            <li onclick="handleChoice(1)">
+                <input type="submit" class="exercise_button" value="300 Ohm">
+            </li>
+            <li onclick="handleChoice(2)">
+                <input type="submit" class="exercise_button" value="600 Ohm">
+            </li>
+            <li onclick="handleChoice(3)">
+                <input type="submit" class="exercise_button" value="450 Ohm">
+            </li>
+        </ol>
+        <p id="explaination" hidden>
+            <img src="/static/images/exp_0801_1.png" alt="">
+        </p>
+    </main>
+    <script>
+        function handleChoice(choice) {
+            document.getElementById("explaination").hidden = false;
+            document.querySelectorAll("li")[2].classList.add("correct");
+        }
+    </script>
+</body>
+</html>

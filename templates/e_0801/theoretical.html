@@ -21,83 +21,73 @@
             <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
                 <img src="/static/images/home-agreement.png" alt="Home">
               </button>
-            <h1>Determination of liquid density using Archimedes' law</h1>
+            <h1>Determining the equivalent resistance of series and parallel connection of resistors</h1>
             <div class="row">
-                <p><b>Objective of the exercise:</b> Determining the density of an unknown liquid based on the motion of a free-falling body through that medium. <br>
-                <b>Description of the exercise:</b> <br>
-                    A ball of known mass m and 2 bottles are given in the apparatus of the exercise, one of which contains water of known density p_0, and the other contains liquid of unknown density p_t. <br>
-                    Based on the measurement of the time of free fall in water, determine the volume of the solid body, and then determine the density of the unknown liquid when measuring the time of free fall in it. <br> <br>
-                    Ignore the influence of the resistance force of the environment.</p>
+                <p>
+                    <b>Objective of the exercise:</b> Comparing the experimental values of the equivalent resistance of the system of 2 resistors connected in parallel or in series, with theoretical calculations. <br>
+                    <b>Description of the exercise:</b> We will perform an experiment on 2 resistance resistors of 100 and 200 ohms.
+                </p>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="/static/images/e_0601_1.png" alt="Slika vezbe">
-                    <div class="explanation_text_container">
-                        <ul id="Explaination_text" hidden="true">
-                            <li>First, let the ball freely fall in water.</li>
-                            <li>Determine the direction of the acceleration of a solid object's fall in a fluid.</li>
-                            <li>Apply Newton's second law to the motion of the object:
-                                <ul>
-                                    <li><code>ma = mg - F<sub>P1</sub></code></li>
-                                </ul>
-                            </li>
-                            <li>According to Archimedes' principle, the buoyant force is numerically equal to the weight of the displaced fluid by the object:
-                                <ul>
-                                    <li><code>F<sub>P1</sub> = Vρ<sub>0</sub>g</code></li>
-                                </ul>
-                            </li>
-                            <li>Thus, we have:
-                                <ul>
-                                    <li><code>ma = mg - Vρ<sub>0</sub>g</code></li>
-                                    <li><code>V = (g - a) / ρ<sub>0</sub> m</code></li>
-                                </ul>
-                            </li>
-                            <li>We can determine the acceleration of the ball through measurements:
-                                <ul>
-                                    <li><code>h = (at<sup>2</sup>) / 2 ⇒ a = 2h / t<sup>2</sup></code></li>
-                                </ul>
-                            </li>
-                            <li>Using these formulas, we can determine the volume <code>V</code> of the solid object.</li>
-                            <li>Repeat the process for the object falling through a fluid with density <code>ρ<sub>t</sub></code>.</li>
-                            <li>Newton's second law for the motion of the object states:
-                                <ul>
-                                    <li><code>ma = mg - F<sub>P2</sub></code></li>
-                                </ul>
-                            </li>
-                            <li>Thus, we have:
-                                <ul>
-                                    <li><code>ma = mg - Vρ<sub>t</sub>g</code></li>
-                                    <li><code>ρ<sub>t</sub> = (g - a) / V m</code></li>
-                                </ul>
-                            </li>
-                            <li>We can determine the acceleration of the ball through measurements:
-                                <ul>
-                                    <li><code>h = (at<sup>2</sup>) / 2 ⇒ a = 2h / t<sup>2</sup></code></li>
-                                </ul>
-                            </li>
-                            <li>In this way, we have determined the density of the unknown fluid.</li>
-                            <li>
-                                <img src="/static//images/e_0601_2.png" alt="Exercise picture 2">
-                            </li>
-                            <li>
-                                <img src="/static//images/e_0601_3.png" alt="Exercise picture 3">
-                            </li>
-                        </ul>                        
-                    <input type="submit" value="Explaination" id="Explaination" class="btn-secondary">
-                    </div>
+                    <img src="/static/images/e_0801_2.png" alt="Slika vezbe">
+                    
                 </div>
                 <div class="col">
                     <h2>Calculations:</h2>
+                    <p>
+                        Determine the predictions of the equivalent resistance of the discharge system
+                    </p>
                     <div>
-                        ρ<sub>t</sub>
-                        <select name="" id="">
-                            <option value="<"><</option>
-                            <option value=">">></option>
-                            <option value="=">=</option>
-                        </select>
-                        ρ
+                        R<sub>e1</sub> = <input type="text" name="calc" id="">
+                        R<sub>e2</sub> = <input type="text" name="calc" id="">
                     </div>
-                    <input type="submit" value="Check" class="btn-secondary">
+                    <input type="submit" value="Check" class="btn-secondary" onclick="alert(document.querySelectorAll('input')[0].value === '300' && document.querySelectorAll('input')[1].value === '150')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="explanation_text_container">
+                    <ul id="Explaination_text" hidden="true">
+                        <h3 style="font-family: sans-serif;">Series connection</h3>
+                        <li>
+                            Let U<sub>1</sub> and U<sub>2</sub> be the respective voltages on resistors R<sub>1</sub> and R<sub>2</sub>, and let I be the current running through them
+                        </li>
+                        <li>
+                            We know that U = U<sub>1</sub> + U<sub>2</sub>
+                        </li>
+                        <center>
+                            <li>
+                                IR<sub>1</sub> + IR<sub>2</sub> = IR<sub>e1</sub>
+                            </li>
+                            <li>
+                                R<sub>1</sub> + R<sub>2</sub> = R<sub>e1</sub>
+                            </li>
+                        </center>
+
+                        <h3 style="font-family: sans-serif;">Parallel connection</h3>
+                        <li>
+                            Let I<sub>1</sub> and I<sub>2</sub> be the respective currents through resistors R<sub>1</sub> and R<sub>2</sub>, and let U be the voltage connected to them
+                        </li>
+                        <li>
+                            We know that I<sub>1</sub> + I<sub>2</sub> = I
+                        </li>
+                        <center>
+                            <li>
+                                U/R<sub>1</sub> + U/R<sub>2</sub> = U/R<sub>e2</sub> 
+                            </li>
+                            <li>
+                                1/R<sub>1</sub> + 1/R<sub>2</sub> = 1/R<sub>e2</sub> 
+                            </li>
+                            <li>
+                                R<sub>e2</sub>=(R<sub>1</sub> + R<sub>2</sub>)/(R<sub>1</sub>R<sub>2</sub>)
+                            </li>
+                        </center>
+                        <br>
+                        <li>
+                            Therefore, R<sub>e1</sub> = 300 Ohms and R<sub>e2</sub> = 150 Ohms.
+                        </li>
+                    </ul>
+                <input type="submit" value="Explaination" id="Explaination" class="btn-secondary">
                 </div>
             </div>
         </div>

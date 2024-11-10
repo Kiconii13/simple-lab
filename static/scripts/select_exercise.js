@@ -52,9 +52,9 @@ const select = document.getElementById("year");
             btn = document.createElement("input");
             btn.type = "submit";
             btn.classList.add("exercise_button");
-            btn.value = "Determination of liquid density using Archimedes' law";
+            btn.value = "Determining the equivalent resistance of\nseries and parallel connection of resistors";
             btn.addEventListener("click", () => {
-              alert(1);
+              window.location.replace("/templates/e_0801/e_0801.html");
             });
 
             buttons.appendChild(btn);
