@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleLab | Exercize</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/exercise.css">
+    <link href="https://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/images/LogoTransparent.png">
+</head>
+<body>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+
+    <main>
+        <div class="rows-container">
+            <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
+                <img src="/static/images/home-agreement.png" alt="Home">
+              </button>
+            <h1>Determination of liquid density using Archimedes' law</h1>
+            <div class="row">
+                <p><b>Objective of the exercise:</b> Determining the density of an unknown liquid based on the motion of a free-falling body through that medium. <br>
+                <b>Description of the exercise:</b> <br>
+                    A ball of known mass m and 2 bottles are given in the apparatus of the exercise, one of which contains water of known density p_0, and the other contains liquid of unknown density p_t. <br>
+                    Based on the measurement of the time of free fall in water, determine the volume of the solid body, and then determine the density of the unknown liquid when measuring the time of free fall in it. <br> <br>
+                    Ignore the influence of the resistance force of the environment.</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="/static/images/e_0601_1.png" alt="Slika vezbe">
+                    <div class="explanation_text_container">
+                        <ul id="Explaination_text" hidden="true">
+                            <li>First, let the ball freely fall in water.</li>
+                            <li>Determine the direction of the acceleration of a solid object's fall in a fluid.</li>
+                            <li>Apply Newton's second law to the motion of the object:
+                                <ul>
+                                    <li><code>ma = mg - F<sub>P1</sub></code></li>
+                                </ul>
+                            </li>
+                            <li>According to Archimedes' principle, the buoyant force is numerically equal to the weight of the displaced fluid by the object:
+                                <ul>
+                                    <li><code>F<sub>P1</sub> = Vρ<sub>0</sub>g</code></li>
+                                </ul>
+                            </li>
+                            <li>Thus, we have:
+                                <ul>
+                                    <li><code>ma = mg - Vρ<sub>0</sub>g</code></li>
+                                    <li><code>V = (g - a) / ρ<sub>0</sub> m</code></li>
+                                </ul>
+                            </li>
+                            <li>We can determine the acceleration of the ball through measurements:
+                                <ul>
+                                    <li><code>h = (at<sup>2</sup>) / 2 ⇒ a = 2h / t<sup>2</sup></code></li>
+                                </ul>
+                            </li>
+                            <li>Using these formulas, we can determine the volume <code>V</code> of the solid object.</li>
+                            <li>Repeat the process for the object falling through a fluid with density <code>ρ<sub>t</sub></code>.</li>
+                            <li>Newton's second law for the motion of the object states:
+                                <ul>
+                                    <li><code>ma = mg - F<sub>P2</sub></code></li>
+                                </ul>
+                            </li>
+                            <li>Thus, we have:
+                                <ul>
+                                    <li><code>ma = mg - Vρ<sub>t</sub>g</code></li>
+                                    <li><code>ρ<sub>t</sub> = (g - a) / V m</code></li>
+                                </ul>
+                            </li>
+                            <li>We can determine the acceleration of the ball through measurements:
+                                <ul>
+                                    <li><code>h = (at<sup>2</sup>) / 2 ⇒ a = 2h / t<sup>2</sup></code></li>
+                                </ul>
+                            </li>
+                            <li>In this way, we have determined the density of the unknown fluid.</li>
+                            <li>
+                                <img src="/static//images/e_0601_2.png" alt="Exercise picture 2">
+                            </li>
+                            <li>
+                                <img src="/static//images/e_0601_3.png" alt="Exercise picture 3">
+                            </li>
+                        </ul>                        
+                    <input type="submit" value="Explaination" id="Explaination" class="btn-secondary">
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Calculations:</h2>
+                    <div>
+                        ρ<sub>t</sub>
+                        <select name="" id="">
+                            <option value="<"><</option>
+                            <option value=">">></option>
+                            <option value="=">=</option>
+                        </select>
+                        ρ
+                    </div>
+                    <input type="submit" value="Check" class="btn-secondary">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/static/scripts/exercise.js"></script>
+</body>
+</html>
