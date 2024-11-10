@@ -78,3 +78,18 @@ th {
 td input{
     max-width: 10rem;
 }
+
+.explanation_text_container ul li {
+    list-style-type: none;
+}
+
+input[name="calc"] {
+    font-size: 12px;
+    padding: 2px;
+    width: 20ch;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 400px;
+}

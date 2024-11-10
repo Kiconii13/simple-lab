@@ -21,83 +21,100 @@
             <button type="button" class="btn-secondary" id="back" onclick="window.location.replace('/templates/index.html');">
                 <img src="/static/images/home-agreement.png" alt="Home">
               </button>
-            <h1>Determination of liquid density using Archimedes' law</h1>
+            <h1>Proving Newton's Second Law with Atmund's machine</h1>
             <div class="row">
-                <p><b>Objective of the exercise:</b> Determining the density of an unknown liquid based on the motion of a free-falling body through that medium. <br>
+                <p><b>Objective of the exercise:</b> Experimental proof of Newton's Second Law, which reads: The acceleration that a moving body receives is proportional to the intensity of the force acting on it, and inversely proportional to the mass of that body. <br> <br>
+                    <b>F = ma</b> <br> <br>
                 <b>Description of the exercise:</b> <br>
-                    A ball of known mass m and 2 bottles are given in the apparatus of the exercise, one of which contains water of known density p_0, and the other contains liquid of unknown density p_t. <br>
-                    Based on the measurement of the time of free fall in water, determine the volume of the solid body, and then determine the density of the unknown liquid when measuring the time of free fall in it. <br> <br>
-                    Ignore the influence of the resistance force of the environment.</p>
+                In proving this physical law, we will use Atmund's machine, which consists of 3 smooth coils of negligible mass, a thin inextensible thread, and 3 balls of known mass m, placed as follows.</p>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="/static/images/e_0601_1.png" alt="Slika vezbe">
-                    <div class="explanation_text_container">
-                        <ul id="Explaination_text" hidden="true">
-                            <li>First, let the ball freely fall in water.</li>
-                            <li>Determine the direction of the acceleration of a solid object's fall in a fluid.</li>
-                            <li>Apply Newton's second law to the motion of the object:
-                                <ul>
-                                    <li><code>ma = mg - F<sub>P1</sub></code></li>
-                                </ul>
-                            </li>
-                            <li>According to Archimedes' principle, the buoyant force is numerically equal to the weight of the displaced fluid by the object:
-                                <ul>
-                                    <li><code>F<sub>P1</sub> = Vρ<sub>0</sub>g</code></li>
-                                </ul>
-                            </li>
-                            <li>Thus, we have:
-                                <ul>
-                                    <li><code>ma = mg - Vρ<sub>0</sub>g</code></li>
-                                    <li><code>V = (g - a) / ρ<sub>0</sub> m</code></li>
-                                </ul>
-                            </li>
-                            <li>We can determine the acceleration of the ball through measurements:
-                                <ul>
-                                    <li><code>h = (at<sup>2</sup>) / 2 ⇒ a = 2h / t<sup>2</sup></code></li>
-                                </ul>
-                            </li>
-                            <li>Using these formulas, we can determine the volume <code>V</code> of the solid object.</li>
-                            <li>Repeat the process for the object falling through a fluid with density <code>ρ<sub>t</sub></code>.</li>
-                            <li>Newton's second law for the motion of the object states:
-                                <ul>
-                                    <li><code>ma = mg - F<sub>P2</sub></code></li>
-                                </ul>
-                            </li>
-                            <li>Thus, we have:
-                                <ul>
-                                    <li><code>ma = mg - Vρ<sub>t</sub>g</code></li>
-                                    <li><code>ρ<sub>t</sub> = (g - a) / V m</code></li>
-                                </ul>
-                            </li>
-                            <li>We can determine the acceleration of the ball through measurements:
-                                <ul>
-                                    <li><code>h = (at<sup>2</sup>) / 2 ⇒ a = 2h / t<sup>2</sup></code></li>
-                                </ul>
-                            </li>
-                            <li>In this way, we have determined the density of the unknown fluid.</li>
-                            <li>
-                                <img src="/static//images/e_0601_2.png" alt="Exercise picture 2">
-                            </li>
-                            <li>
-                                <img src="/static//images/e_0601_3.png" alt="Exercise picture 3">
-                            </li>
-                        </ul>                        
-                    <input type="submit" value="Explaination" id="Explaination" class="btn-secondary">
-                    </div>
+                    <img src="/static/images/e_0701_1.png" alt="Slika vezbe">
+                    
                 </div>
                 <div class="col">
                     <h2>Calculations:</h2>
                     <div>
-                        ρ<sub>t</sub>
-                        <select name="" id="">
-                            <option value="<"><</option>
-                            <option value=">">></option>
-                            <option value="=">=</option>
-                        </select>
-                        ρ
+                        a<sub>1</sub> = <input type="text" name="calc" id="calc1"> <br>
+                        a<sub>2</sub> = <input type="text" name="calc" id="calc2"> <br>
+                        a<sub>3</sub> = <input type="text" name="calc" id="calc3"> <br>
                     </div>
                     <input type="submit" value="Check" class="btn-secondary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="explanation_text_container">
+                    <ul id="Explaination_text" hidden="true">
+                        <li>Gravitational force acts on every body of mass m.</li>
+                        <li>As the thread is thin and inextensible, the resulting force on every small part of that thread is.</li>
+                        <img src="/static/images/exp_0701.png" alt="">
+                        <br>
+                        <img src="/static/images/e_0701_2.png" alt="">
+                        <li>
+                            We assume the directions of movement (acceleration) of bodies 1, 2 and 3
+                        </li>
+                        <br>
+                        <li>We write Newton's Second Laws for each of these bodies
+                            <center>
+                                <ol>
+                                    <li>
+                                        <code>ma<sub>1</sub>=mg-T</code>
+                                    </li>
+                                    <li>
+                                        <code>ma<sub>2</sub>=2T-mg</code>
+                                    </li>
+                                    <li>
+                                        <code>ma<sub>3</sub>=mg-T</code>
+                                    </li>
+                                </ol>
+                            </center>
+                        </li> <br>
+                        <li>
+                            The variables are a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, T
+                        </li>
+                        <li>
+                            We have 4 unknowns => we must have 4 non-equivalent singularities
+                        </li>
+                        <li>
+                            Based on Equations 1 and 3, we can conclude that a<sub>1</sub>=a<sub>3</sub>
+                        </li>
+                        <li>
+                            If body 1 moves by s<sub>1</sub> for a time period t, body 2 moves by s<sub>2</sub> = 2s<sub>1</sub>
+                        </li>
+                        <li>
+                            As the movement of the body is uniformly accelerated, we know that s<sub>1</sub>=0.5*a<sub>1</sub>t<sup>2</sup> and that s<sub>2</sub>=0.5*a<sub>2</sub>t<sup>2</sup>
+                        </li>
+                        <li>
+                            From there we have that s<sub>1</sub>/s<sub>2</sub> = a<sub>1</sub>/a<sub>2</sub> => s<sub>1</sub>/2*s<sub>2</sub> = a<sub>1</sub>/a<sub>2</sub> => 2*a<sub>1</sub> = a<sub>2</sub>
+                        </li>
+                        <li>
+                            Now we have 4 equations and 4 unknowns and we can solve the system
+                        </li>
+                        <li>
+                            From equation 1 we have <code>T=mg-ma</code>
+                        </li>
+                        <li>
+                            Substituting into the 2nd equation, we get that <code>2ma=2mg-2ma-mg => 4ma=mg => a=g/4</code>
+                        </li> <br>  
+                        <li>
+                            From there we conclude that the calculations are for: <br> <br>
+                            <center>
+                                <ol>
+                                    <li>
+                                        a<sub>1</sub> = g / 4
+                                    </li>
+                                    <li>
+                                        a<sub>2</sub> = g / 2
+                                    </li>
+                                    <li>
+                                        a<sub>3</sub> = g / 4
+                                    </li>
+                                </ol>
+                            </center>
+                        </li>
+                    </ul>                        
+                <input type="submit" value="Explaination" id="Explaination" class="btn-secondary">
                 </div>
             </div>
         </div>
